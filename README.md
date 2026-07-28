@@ -4,6 +4,10 @@ Status: public coordination and reference repository
 
 AZOTH Commons is the sanitized front door for the AZOTH project family. It explains repository boundaries, shared expectations, and which tools are ready for outside use without exposing the private historical workshop.
 
+## Published tools
+
+- [AZOTH PRISM](https://github.com/wruegg-cyber/azoth-prism) - alpha provenance-bearing audio analysis and observation tools; clean-clone wheel and tests verified on Python 3.11 and 3.12.
+
 This repository intentionally contains no private monorepo source, machine-specific configuration, credentials, personal indexes, proprietary ROMs or BIOS files, uncertain-rights samples, internal relays, or recovery logs.
 
 Start with:
