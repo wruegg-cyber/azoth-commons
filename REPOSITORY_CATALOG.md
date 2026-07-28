@@ -11,13 +11,18 @@ Last reviewed: 2026-07-27
 | `east-texas-historical-os` | Private | Provisional documentation-first Historical Operating System repository |
 | `azoth-commons` | Public | Sanitized repository catalog, shared standards, and contribution gateway |
 
+## Published independent tools
+
+| Repository | Purpose | Evidence |
+|---|---|---|
+| [`azoth-prism`](https://github.com/wruegg-cyber/azoth-prism) | Provenance-bearing audio analysis, localization, model registry, fixtures, recognition adapters, and HTML inspection bench | Public alpha; 13 focused tests; clean-clone wheel; GitHub Actions passes Python 3.11 and 3.12 |
+
 ## First extraction candidates
 
 These names are planned boundaries, not claims that publication is complete.
 
 | Planned repository | Purpose | Status |
 |---|---|---|
-| `azoth-prism` | Audio-analysis and sensorium tools | Boundary review |
 | `azoth-device-registry` | Device definitions and validation | Boundary review |
 | `azoth-pisynth` | Standalone Pi synthesizer with optional AZOTH adapter | Decomposition required |
 | `mpc-autochopper` | Sample chopping workflow | Clean-clone review |
