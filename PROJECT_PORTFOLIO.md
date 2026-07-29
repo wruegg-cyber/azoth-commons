@@ -1,6 +1,6 @@
 # AZOTH Project Portfolio
 
-Status: active dependency ledger  
+Status: active dependency ledger
 Last reviewed: 2026-07-29
 
 ## The count
@@ -68,4 +68,3 @@ use.
    separately.
 5. Update the portfolio when a boundary, dependency, status, or next gate
    changes.
-

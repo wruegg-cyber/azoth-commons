@@ -1,6 +1,6 @@
 # Portfolio Execution Queue
 
-Status: dependency-ordered  
+Status: dependency-ordered
 Last reviewed: 2026-07-29
 
 This is the cross-project queue. Project-specific task files remain inside the
@@ -52,4 +52,3 @@ project that owns the work.
 A queue item is done only when its code or record is committed, pushed, linked
 from the owning project, tested at the stated level, and honest about remaining
 owner, hardware, rights, or live-system validation.
-

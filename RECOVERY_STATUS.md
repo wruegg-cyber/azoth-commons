@@ -43,7 +43,7 @@ ignored, archived, or deliberately discarded.
 
 ### PRISM / Sensorium build chat — covered
 
-Audit source task: `019f9f02-7c0f-75c0-80a5-ce7d9aabc21b`  
+Audit source task: `019f9f02-7c0f-75c0-80a5-ce7d9aabc21b`
 Disposition: covered by pushed workshop history and standalone extraction.
 
 - `0fe263f5`: Vision Physics research, GPT brief, Sensorium, and direction
