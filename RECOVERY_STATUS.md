@@ -46,6 +46,11 @@ These are triage buckets, not publication allowlists. In particular, logs,
 samples, device inventories, and handoffs may move to a more restrictive bucket
 after content review.
 
+The exact 88-path private manifest is preserved in `will-codeing` commit
+`d613ad09` on `codex/workshop-recovery-ledger` (draft PR 3). It was generated in
+a separate clean worktree and mechanically matched 88-for-88 against the live
+status snapshot; the live files themselves were not moved or staged.
+
 Therefore the honest verdict is: the known repositories and committed project
 records are backed up, but the private workshop recovery is **not complete**.
 Each remaining entry must be classified before it can be committed, extracted,
