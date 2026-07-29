@@ -34,6 +34,18 @@ not cleaned or bulk-staged. Some are meaningful source/evidence; others are
 virtual environments, caches, generated output, machine-local state, or large
 capture material.
 
+A first non-destructive classification divides those 88 status entries into:
+
+- **63 source/design/operational records needing project-by-project review**;
+- **18 private evidence, capture, sample, or test-result paths** that require a
+  storage and rights decision;
+- **7 generated/cache/machine-local paths** that should be ignored or removed
+  only after their targets are verified.
+
+These are triage buckets, not publication allowlists. In particular, logs,
+samples, device inventories, and handoffs may move to a more restrictive bucket
+after content review.
+
 Therefore the honest verdict is: the known repositories and committed project
 records are backed up, but the private workshop recovery is **not complete**.
 Each remaining entry must be classified before it can be committed, extracted,
