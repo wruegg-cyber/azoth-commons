@@ -1,7 +1,11 @@
 # Repository Catalog
 
 Status: active planning catalog
-Last reviewed: 2026-07-27
+Last reviewed: 2026-07-29
+
+The complete 20-lane inventory, dependency order, resume anchors, and next gates
+now live in [PROJECT_PORTFOLIO.md](PROJECT_PORTFOLIO.md) and
+[PROJECT_PORTFOLIO.json](PROJECT_PORTFOLIO.json).
 
 ## Control repositories
 
@@ -10,6 +14,7 @@ Last reviewed: 2026-07-27
 | `will-codeing` | Private | Historical workshop, integrated development, receipts, and rights-sensitive research |
 | `east-texas-historical-os` | Private | Provisional documentation-first Historical Operating System repository |
 | `azoth-commons` | Public | Sanitized repository catalog, shared standards, and contribution gateway |
+| `azoth-voice` | Private | Standalone voice laboratory; Phase 1 functional, source-voice quality not owner-accepted |
 
 ## Published independent tools
 

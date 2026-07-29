@@ -13,6 +13,9 @@ This repository intentionally contains no private monorepo source, machine-speci
 Start with:
 
 - [REPOSITORY_CATALOG.md](REPOSITORY_CATALOG.md)
+- [PROJECT_PORTFOLIO.md](PROJECT_PORTFOLIO.md)
+- [EXECUTION_QUEUE.md](EXECUTION_QUEUE.md)
+- [RECOVERY_STATUS.md](RECOVERY_STATUS.md)
 - [EXTRACTION_STANDARD.md](EXTRACTION_STANDARD.md)
 - [ACCESS_MODEL.md](ACCESS_MODEL.md)
 - [GPT_START_HERE.md](GPT_START_HERE.md)
