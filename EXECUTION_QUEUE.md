@@ -16,8 +16,9 @@ project that owns the work.
    use public or read-only access for references.
 4. Reconcile the Historical OS architecture, processing, and Hallsville branch
    stack into reviewed pull requests without flattening their distinct roles.
-5. Classify remaining private-workshop changes as source, evidence, generated
-   output, machine-local state, or disposable cache. Never bulk-stage them.
+5. Review the preserved private-workshop source records lane by lane; extract or
+   consolidate through explicit allowlists and retain the live originals until
+   each destination is accepted.
 
 ## Next: foundations
 
@@ -33,18 +34,20 @@ project that owns the work.
 10. Process one public Historical OS record end to end: source evidence,
     uncertainty/status, normalized entity, compiled world object, Hallsville
     map presentation, and curator review.
-11. Complete one Sound Archaeology instrument from identity through live-play
+11. Apply the rights-cleared game-asset catalog to the Hallsville test city and
+    rough out vegetation and character designs with provenance/status tags.
+12. Complete one Sound Archaeology instrument from identity through live-play
     capture and reproducible artifact.
-12. Close one Tracker/MOD fidelity gap with machine receipts and reviewed audio.
-13. Compare at least two lawful Voice Phase 2 sources using the same text and
+13. Close one Tracker/MOD fidelity gap with machine receipts and reviewed audio.
+14. Compare at least two lawful Voice Phase 2 sources using the same text and
     character patch; record machine measures separately from owner-ear choice.
 
 ## Later extraction and products
 
-14. Extract PiSynth, Muse, MPC tools, media extraction, and GamePC code-only
+15. Extract PiSynth, Muse, MPC tools, media extraction, and GamePC code-only
     utilities one clean-clone proof at a time.
-15. Keep ROM Scholar behind its no-ROM/no-BIOS rights gate.
-16. Create a standalone Historical RPG repository only after the compiled-world
+16. Keep ROM Scholar behind its no-ROM/no-BIOS rights gate.
+17. Create a standalone Historical RPG repository only after the compiled-world
     and save/runtime contracts are stable enough to support distribution.
 
 ## Definition of systematically done

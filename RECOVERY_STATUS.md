@@ -26,35 +26,36 @@ checked against the intended human or service identity.
 - Voice `main`
 - all three Historical OS worktrees
 
-## Unresolved private workshop state
+## Private workshop preservation complete; consolidation remains
 
-At this snapshot, `will-codeing` still has **88 uncommitted entries**: **11
-tracked modifications** and **77 untracked paths**. They remain on disk and were
-not cleaned or bulk-staged. Some are meaningful source/evidence; others are
-virtual environments, caches, generated output, machine-local state, or large
-capture material.
+The live `will-codeing` worktree still has **88 intentionally uncommitted
+entries**: **11 tracked modifications** and **77 untracked paths**. They remain
+on disk and were not cleaned or bulk-staged. Preservation is now complete even
+though consolidation is not:
 
-A first non-destructive classification divides those 88 status entries into:
+- **63 source/design/operational entries** were copied into canonical paths on
+  the private recovery branch, verified file-for-file, tested, committed, and
+  pushed;
+- **18 private evidence/capture/sample/test-result entries** were copied to the
+  local AZOTH evidence store and verified against a per-file SHA-256 manifest;
+- **7 generated/cache/machine-local entries** were copied to a separate local
+  forensic snapshot, with full hashes for unique records and structural parity
+  plus environment receipts for the reproducible cache/environment trees.
 
-- **63 source/design/operational records needing project-by-project review**;
-- **18 private evidence, capture, sample, or test-result paths** that require a
-  storage and rights decision;
-- **7 generated/cache/machine-local paths** that should be ignored or removed
-  only after their targets are verified.
+These remain preservation buckets, not publication allowlists. Logs, samples,
+device inventories, handoffs, captures, and machine state remain private until
+their owner, rights, and repository boundaries are reviewed.
 
-These are triage buckets, not publication allowlists. In particular, logs,
-samples, device inventories, and handoffs may move to a more restrictive bucket
-after content review.
+The exact private manifest, source receipt, archive counts, validation results,
+and limitations are preserved on `codex/workshop-recovery-ledger` at
+`bb8a8c84` (draft PR 3). The source snapshot commit is `5c684b0c`. The manifest
+mechanically matches the live status set 88-for-88; the live files themselves
+were not moved or staged.
 
-The exact 88-path private manifest is preserved in `will-codeing` commit
-`d613ad09` on `codex/workshop-recovery-ledger` (draft PR 3). It was generated in
-a separate clean worktree and mechanically matched 88-for-88 against the live
-status snapshot; the live files themselves were not moved or staged.
-
-Therefore the honest verdict is: the known repositories and committed project
-records are backed up, but the private workshop recovery is **not complete**.
-Each remaining entry must be classified before it can be committed, extracted,
-ignored, archived, or deliberately discarded.
+Therefore the honest verdict is: **workshop preservation is complete**. Project
+assignment, standalone extraction, rights review, PR review, and eventual
+cleanup remain separate work. Keep the live originals until those consolidation
+decisions are reviewed; preservation alone does not authorize deletion.
 
 ## Cross-chat recovery ledger
 
@@ -108,7 +109,7 @@ stable Git destinations:
 - Bounded Hallsville historical intake lab: pushed commit `26e7b5e` and draft
   PR 5.
 - Voice reader and Phase 1 synth in the private workshop: pushed commits
-  `9cc521ac`, `0198f7ec`, and `0148dd90`.
+  `9cc521ac`, `0198f7ec`, `0148dd90`, `5a637c59`, and `3d86821a`.
 - Standalone Voice repository: pushed `azoth-voice` commit `27709ee`, with
   provenance, clean-install dependencies, and deterministic tests.
 - Portfolio decomposition and dependency queue: this `azoth-commons` review
