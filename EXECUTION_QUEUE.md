@@ -11,9 +11,10 @@ project that owns the work.
 1. Merge the tested PRISM band-row pull request after review.
 2. Keep the new private Voice repository installed for the intended agents;
    compare a rights-safe neural source before expanding DSP features.
-3. Install the chosen GitHub App/service identity on the private History and
-   Voice repositories. Give History write access only to the History workflow;
-   use public or read-only access for references.
+3. Keep the ChatGPT Codex Connector installed across all repositories as the
+   owner-approved collaboration and handoff bus. Use scoped branches, pull
+   requests, secret hygiene, and explicit project boundaries to govern its
+   intentionally broad read/write access.
 4. Reconcile the Historical OS architecture, processing, and Hallsville branch
    stack into reviewed pull requests without flattening their distinct roles.
 5. Review the preserved private-workshop source records lane by lane; extract or

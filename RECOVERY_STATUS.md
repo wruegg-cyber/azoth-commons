@@ -16,9 +16,12 @@ is publication-ready.
 - `azoth-commons`: repository standards are on `main`; the portfolio ledger is
   proposed on a review branch.
 
-The configured GitHub connector can currently enumerate all five repositories.
-This proves reachability only; least-privilege write/read roles still need to be
-checked against the intended human or service identity.
+The ChatGPT Codex Connector is intentionally installed with **All repositories**
+access. The owner confirmed that it is the shared collaboration and handoff path
+for GPT, Codex, and the project family, so cross-project read/write access is an
+accepted operational tradeoff rather than an unresolved least-privilege defect.
+Repository visibility, rights, secret hygiene, scoped branches, pull-request
+review, and non-destructive worktree rules remain unchanged.
 
 ## Clean local worktrees
 
