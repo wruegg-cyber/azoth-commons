@@ -11,3 +11,5 @@ Thumbs.db
 *.pfx
 private/
 generated/
+__pycache__/
+*.py[cod]

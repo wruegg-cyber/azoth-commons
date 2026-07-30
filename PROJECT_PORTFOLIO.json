@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-07-29",
+  "counting_rule": "A primary project lane has its own purpose, resume anchor, next gate, and dependency list. It does not need to be a separate repository yet.",
+  "counts": {
+    "primary_project_lanes": 20,
+    "repositories": 5,
+    "candidate_libraries": 12
+  },
+  "repositories": [
+    {
+      "id": "will-codeing",
+      "visibility": "private",
+      "role": "Integrated historical workshop and active hardware laboratory",
+      "state": "active; extraction source; not suitable for bulk publication"
+    },
+    {
+      "id": "azoth-commons",
+      "visibility": "public",
+      "role": "Sanitized portfolio ledger, standards, and contribution gateway",
+      "state": "active"
+    },
+    {
+      "id": "azoth-prism",
+      "visibility": "public",
+      "role": "Standalone provenance-bearing audio observation engine",
+      "state": "public alpha"
+    },
+    {
+      "id": "azoth-voice",
+      "visibility": "private",
+      "role": "Standalone speech and character-voice laboratory",
+      "state": "Phase 1 functional; owner rejected current source-voice quality"
+    },
+    {
+      "id": "east-texas-historical-os",
+      "visibility": "private",
+      "role": "Historical knowledge, processing, world compilation, and Hallsville prototype",
+      "state": "architecture and processing branches active"
+    }
+  ],
+  "projects": [
+    {
+      "id": "azoth-commons",
+      "name": "AZOTH Commons",
+      "priority": 0,
+      "status": "active",
+      "repository": "azoth-commons",
+      "depends_on": [],
+      "resume_anchor": "README.md and PROJECT_PORTFOLIO.json",
+      "next_gate": "Keep the registry valid and update it in the same pull request as every boundary change.",
+      "hive_role": "Shared map and public front door, not a runtime dependency."
+    },
+    {
+      "id": "shared-provenance",
+      "name": "Shared Provenance, NIL, ORP, and Status Contracts",
+      "priority": 0,
+      "status": "integrated; extraction planned",
+      "repository": "will-codeing",
+      "depends_on": [],
+      "resume_anchor": "ORPHAN_REGISTER.md and canonical status/provenance specifications",
+      "next_gate": "Extract a small schema-and-validator package with versioned identifiers.",
+      "hive_role": "Truth and memory contract used by nearly every Hive district."
+    },
+    {
+      "id": "device-registry",
+      "name": "AZOTH Device Registry",
+      "priority": 0,
+      "status": "integrated; extraction planned",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "Device definition data, validators, and instrument identity records",
+      "next_gate": "Rights-review a code-and-YAML allowlist and prove validation in a clean clone.",
+      "hive_role": "Canonical inventory of instruments and machines the Hive can address."
+    },
+    {
+      "id": "shared-interface",
+      "name": "Shared Interface and Control Contracts",
+      "priority": 0,
+      "status": "integrated; boundary review",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance", "device-registry"],
+      "resume_anchor": "docs/CANON/03_INTERFACE_RULES.md and shared control contracts",
+      "next_gate": "Separate portable events/state schemas from desktop and hardware adapters.",
+      "hive_role": "Common language between the Hive shell, engines, devices, and games."
+    },
+    {
+      "id": "hive-core",
+      "name": "Hive Core and City Runtime",
+      "priority": 1,
+      "status": "active integrated workshop",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance", "device-registry", "shared-interface"],
+      "resume_anchor": "Hive runtime, council, City, state, and district modules plus current handoffs",
+      "next_gate": "Publish a stable plugin boundary before extracting more Hive-dependent districts.",
+      "hive_role": "The heart: orchestration, shared state, memory, councils, and visible City."
+    },
+    {
+      "id": "azoth-prism",
+      "name": "AZOTH PRISM",
+      "priority": 1,
+      "status": "public alpha",
+      "repository": "azoth-prism",
+      "depends_on": [],
+      "resume_anchor": "Public README, package, tests, and open pull requests",
+      "next_gate": "Merge deterministic band rows, then define stem observations on the same row contract.",
+      "hive_role": "The Hive's ears and evidence-bearing audio sensorium; independently usable."
+    },
+    {
+      "id": "azoth-voice",
+      "name": "AZOTH Voice Synth",
+      "priority": 1,
+      "status": "private incubation",
+      "repository": "azoth-voice",
+      "depends_on": [],
+      "resume_anchor": "README.md, docs/VOICE_SYNTH_PROJECT.md, and tools/voice",
+      "next_gate": "Compare rights-safe neural source engines; owner-ear approval remains required.",
+      "hive_role": "Shared voice source for the Hive, History, games, and accessible reading."
+    },
+    {
+      "id": "historical-os",
+      "name": "East Texas Historical Operating System",
+      "priority": 1,
+      "status": "private architecture and prototypes",
+      "repository": "east-texas-historical-os",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "Vision constitution, architecture, historical-processing, and Hallsville Phase 0 branches",
+      "next_gate": "Run one end-to-end public-data record through evidence, compilation, map, and review gates.",
+      "hive_role": "A sibling knowledge system that can exchange provenance and observers with the Hive."
+    },
+    {
+      "id": "sound-archaeology",
+      "name": "Sound Archaeology and Instrument Harvesting",
+      "priority": 1,
+      "status": "active research and capture",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance", "device-registry"],
+      "resume_anchor": "Sound Archaeology handoffs, harvest protocol, device maps, and immutable captures",
+      "next_gate": "Complete one instrument's identity, route, live-play capture, and reproducible artifact set.",
+      "hive_role": "Feeds evidence, voices, samples, and instrument knowledge into the Hive."
+    },
+    {
+      "id": "tracker-mod",
+      "name": "Tracker and MOD Fidelity Engine",
+      "priority": 1,
+      "status": "active integrated engine",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "Tracker/MOD engine, focused drivers, comparison receipts, and active packets",
+      "next_gate": "Close remaining source-faithful playback gaps with reviewed audio evidence.",
+      "hive_role": "Reusable music engine for MK2, PiSynth, game worlds, and archival playback."
+    },
+    {
+      "id": "azoth-pisynth",
+      "name": "AZOTH PiSynth",
+      "priority": 2,
+      "status": "integrated prototype; extraction planned",
+      "repository": "will-codeing",
+      "depends_on": ["device-registry", "shared-interface"],
+      "resume_anchor": "pi_synth_node.py and related engine/control modules",
+      "next_gate": "Separate the synth engine from Pi/Hive adapters and measure the actual target envelope.",
+      "hive_role": "Portable instrument engine and future voice host."
+    },
+    {
+      "id": "muse-composer",
+      "name": "Muse Composer",
+      "priority": 2,
+      "status": "integrated tool; extraction candidate",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "muse_composer package, tests, and workflow studio",
+      "next_gate": "Prove a clean install with local fixtures and isolate optional model providers.",
+      "hive_role": "Composition and arrangement district that can also run alone."
+    },
+    {
+      "id": "mpc-tools",
+      "name": "MPC Autochopper and Sampler Tools",
+      "priority": 2,
+      "status": "integrated tool; extraction candidate",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance", "shared-interface"],
+      "resume_anchor": "mpc_autochopper package and focused tests",
+      "next_gate": "Verify rights-clean fixtures, optional stem backends, and MPC export in a clean clone.",
+      "hive_role": "Sampler preparation service for Hive music workflows."
+    },
+    {
+      "id": "azoth-mk2",
+      "name": "AZOTH MK2 Hardware Workstation",
+      "priority": 2,
+      "status": "active hardware product",
+      "repository": "will-codeing",
+      "depends_on": ["hive-core", "device-registry", "shared-interface", "tracker-mod", "azoth-pisynth"],
+      "resume_anchor": "Current CODEX/Claude relay, packet queue, Pi node, display, and engine sources",
+      "next_gate": "Continue one validated packet at a time; keep machine receipts and owner-hand/ear verdicts distinct.",
+      "hive_role": "Physical Hive instrument and control surface."
+    },
+    {
+      "id": "ghost-radio",
+      "name": "Ghost Radio",
+      "priority": 2,
+      "status": "active service and research instrument",
+      "repository": "will-codeing",
+      "depends_on": ["hive-core", "azoth-prism", "azoth-voice"],
+      "resume_anchor": "Ghost Radio service, source registry, sample forge, workbench, and recovery handoffs",
+      "next_gate": "Prove a rights-clean source-to-sample-to-Hive route with provenance intact.",
+      "hive_role": "Signal ecology, listening tower, and sample source in the Hive City."
+    },
+    {
+      "id": "gamepc-tools",
+      "name": "GamePC Learning and Archive Tools",
+      "priority": 2,
+      "status": "active research; extraction candidate",
+      "repository": "will-codeing",
+      "depends_on": ["hive-core", "shared-provenance"],
+      "resume_anchor": "GamePC node, campaign, semantic-control, archive, and evidence tools",
+      "next_gate": "Split legal code-only utilities from private machine inventories and game/media evidence.",
+      "hive_role": "Hive outpost for learning controls, software archaeology, and game interaction."
+    },
+    {
+      "id": "media-extract",
+      "name": "Media and Audio Extraction Utilities",
+      "priority": 2,
+      "status": "boundary review",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "Media extraction and normalization scripts plus provenance records",
+      "next_gate": "Create a code-only allowlist and document lawful-input responsibility.",
+      "hive_role": "Ingestion adapter for PRISM, archives, and research lanes."
+    },
+    {
+      "id": "suno-library",
+      "name": "Suno Library and Refresh Workflow",
+      "priority": 2,
+      "status": "private archive workflow",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance", "media-extract"],
+      "resume_anchor": "Fixed-anchor refresh worker, library records, and start/status/stop controls",
+      "next_gate": "Finish the bounded refresh and preserve source/license metadata without publishing private media.",
+      "hive_role": "Private composition archive and reference source; not a public asset package."
+    },
+    {
+      "id": "historical-rpg",
+      "name": "Historical RPG and World Runtime",
+      "priority": 3,
+      "status": "future product with Hallsville prototype",
+      "repository": "east-texas-historical-os",
+      "depends_on": ["historical-os", "azoth-voice", "shared-interface"],
+      "resume_anchor": "Hallsville Phase 0 map/viewer and History representation-engine specifications",
+      "next_gate": "Stabilize the compiled-world contract, then create a separate distributable game repository.",
+      "hive_role": "A commercial-capable application of shared history, voice, and interface contracts."
+    },
+    {
+      "id": "rom-scholar",
+      "name": "ROM Scholar",
+      "priority": 3,
+      "status": "rights-gated extraction candidate",
+      "repository": "will-codeing",
+      "depends_on": ["shared-provenance"],
+      "resume_anchor": "Code-only research and reconstruction utilities",
+      "next_gate": "Define a code-only repository boundary with no ROMs, BIOS files, keys, or proprietary dumps.",
+      "hive_role": "Software-archaeology knowledge source with a strict rights boundary."
+    }
+  ],
+  "candidate_libraries": [
+    "DAW adapters",
+    "network and node transport",
+    "Hive safety and sentinels",
+    "reconstruction utilities",
+    "visual and renderer primitives",
+    "piano-system tools",
+    "weird-instrument research",
+    "automation helpers",
+    "MIDI utilities",
+    "pattern and sequencer primitives",
+    "audio-bus utilities",
+    "mechanical and hardware design records"
+  ]
+}
+
