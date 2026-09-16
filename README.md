@@ -16,6 +16,7 @@ Start with:
 - [EXTRACTION_STANDARD.md](EXTRACTION_STANDARD.md)
 - [ACCESS_MODEL.md](ACCESS_MODEL.md)
 - [GPT_START_HERE.md](GPT_START_HERE.md)
+- [UNIFIED_INTELLIGENCE_LOOP.md](UNIFIED_INTELLIGENCE_LOOP.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Public visibility makes this repository readable by people and GPT-based research workflows without granting them write access to private projects. Write proposals arrive through pull requests and remain subject to owner review.
