@@ -1,0 +1,33 @@
+name: Ask permission to use something
+description: Ask to use AZOTH material beyond its licence (for example commercially, or without share-alike).
+title: "[Permission] "
+labels: ["permission request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking first. Public AZOTH material is CC BY-NC-SA 4.0 (credit, non-commercial, share-alike).
+        If your use fits that licence, you don't need to ask: just credit it. Otherwise, tell us below.
+  - type: input
+    id: what
+    attributes:
+      label: What do you want to use?
+      description: A link or name (a video, the song, a picture, some code, a document...)
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How will you use it?
+      description: Your project, where it will appear, and whether it is commercial.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: How will you credit AZOTH?
+      placeholder: "Based on AZOTH by Will (wruegg-cyber)"
+  - type: input
+    id: contact
+    attributes:
+      label: How can we reach you? (optional)
