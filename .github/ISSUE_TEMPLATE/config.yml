@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Say hello, ask a question, or share an idea
+    url: https://github.com/wruegg-cyber/azoth-commons/discussions
+    about: Discussions work like a forum, so no coding is needed. This is the best place to talk with us.
